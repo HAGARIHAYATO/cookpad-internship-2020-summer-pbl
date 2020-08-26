@@ -1,0 +1,14 @@
+{
+  "colors": {
+    "main": "#fff",
+    "blue": "#5438DC",
+    "lightblue": "#0788FF",
+    "pink": "#F9627D"
+  },
+  "styles": {
+    "validationError": {
+      "color": "red",
+      "fontSize": "12px"
+    }
+  }
+}
