@@ -2,51 +2,6 @@
   "recipes": [
     {
       "id": 1,
-      "name": "ポトフ",
-      "user_id": 1,
-      "steps": [
-        {
-          "number": 1,
-          "text": "食材の処理"
-        },
-        {
-          "number": 2,
-          "text": "火を通す"
-        },
-        {
-          "number": 3,
-          "text": "味を整える"
-        }
-      ],
-      "use_seasonings": [
-        {
-          "id": 1,
-          "name": "塩",
-          "quantity": "少々",
-          "unit": null
-        },
-        {
-          "id": 3,
-          "name": "ブーケガルニ",
-          "quantity": 1,
-          "unit": "束"
-        },
-        {
-          "id": 4,
-          "name": "オリーブ油",
-          "quantity": 1,
-          "unit": "大さじ"
-        },
-        {
-          "id": 9,
-          "name": "コショウ"
-        }
-      ]
-    }
-  ],
-  "seasonings": [
-    {
-      "id": 1,
       "name": "塩"
     },
     {
@@ -91,22 +46,11 @@
     "name": "東カズマ",
     "email": "email",
     "password": "password",
-    "seasonings": [
-      {
-        "id": 1,
-        "name": "塩"
-      },
-      {
-        "id": 2,
-        "name": "醤油"
-      },
-      {
-        "id": 3,
-        "name": "ブーケガルニ"
-      }
+    "favorite_recipe_ids": [
+      1,2,3
     ],
-    "recipe_ids": [
-      1
+    "post_recipe_ids": [
+      1, 2, 3, 4, 5, 6, 9
     ]
   }
 }

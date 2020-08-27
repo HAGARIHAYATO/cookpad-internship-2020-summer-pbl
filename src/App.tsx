@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import { recipes, user } from './static/data.json'
+import { user, recipes } from './static/data.json'
 import { Router, Route } from 'react-router-dom';
 import Login from './component/Login'
 import Mypage from './pages/Mypage'
@@ -15,8 +15,8 @@ function App() {
         <Router history={history}>
           <Header isLogin={isLogin} changeLogin={changeLogin}/>
           <Route exact path='/' component={Home}/>
-          <Route exact path='/login' render={ () => <Login isLogin={isLogin} changeLogin={changeLogin}/> }/>
-          <Route exact path='/mypage' render={ () => <Mypage /> }/>
+          <Route exact path='/login' render={ () => <Login isLogin={isLogin} changeLogin={changeLogin} user={user} /> }/>
+          <Route exact path='/mypage' render={ () => <Mypage user={user} recipes={recipes} /> }/>
         </Router>
       </div>
       <style jsx global>{`

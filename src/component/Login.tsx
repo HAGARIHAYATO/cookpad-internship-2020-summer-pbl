@@ -1,18 +1,20 @@
 import React, {FC, useState, Dispatch, SetStateAction} from 'react';
 import { colors, styles } from '../static/styles.json'
-import { user } from '../static/data.json'
 import { Link } from 'react-router-dom'
+import { Recipe, User } from '../static/index'
+
 
 interface Props {
   isLogin: boolean,
-  changeLogin: Dispatch<SetStateAction<boolean>>
+  changeLogin: Dispatch<SetStateAction<boolean>>,
+  user: User,
 }
 
 const Login: FC<Props> = (props) => {
   const [email, changeMail] = useState("")
   const [password, changePass] = useState("")
   const checkValidate = (text: string, isPassword: boolean) => {
-    const keyword = isPassword ? user.password : user.email
+    const keyword = isPassword ? props.user.password : props.user.email
     if (text !== keyword) {
       return(
         <>
