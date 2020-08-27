@@ -1,14 +1,15 @@
 {
   "colors": {
-    "main": "#fff",
-    "blue": "#5438DC",
+    "main": "#F7F4F0",
+    "blue": "#38369A",
+    "brown": "#7B7874",
     "lightblue": "#0788FF",
     "pink": "#F9627D"
   },
   "styles": {
     "validationError": {
       "color": "red",
-      "fontSize": "12px"
+      "fontSize": "10px"
     }
   }
 }

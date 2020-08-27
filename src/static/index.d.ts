@@ -7,16 +7,22 @@ export interface Recipe {
     sour: number,
     salty: number,
     bitter: number,
-    umami: number
-  }
+    oily: number
+  },
+  materials?: Array<Material>
+}
+
+export interface Material {
+  name: string,
+  quantity: string
 }
 
 export interface User {
-  name: string,
-  password: string,
-  email: string,
-  post_recipe_ids: Array<number>
-  favorite_recipe_ids: Array<number>
+  name?: string,
+  password?: string,
+  email?: string,
+  post_recipe_ids?: Array<number>
+  favorite_recipe_ids?: Array<number>
 }
 
 export interface Props {

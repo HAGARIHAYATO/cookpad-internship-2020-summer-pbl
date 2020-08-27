@@ -1,10 +1,14 @@
 import React, {FC} from 'react'
 import { Recipe } from '../static/index'
+import { Link } from 'react-router-dom'
 import img from '../static/seasonings.jpg'
+import { colors } from '../static/styles.json'
 
 interface Props {
   items: Array<Recipe>
 }
+
+const prefix = "/recipes/"
 
 const Carousel: FC<Props> = (props) => {
   return(
@@ -14,10 +18,12 @@ const Carousel: FC<Props> = (props) => {
         <div className="container__bar">
           {props.items.map((item) => {
             return (
-              <div className="container__card">
-                <img src={img} className="item__image" alt={item.name} />
-                <p className="item__name">{item.name}</p>
-              </div>
+              <Link to={prefix + item.id} >
+                <div className="container__card">
+                  <img src={img} className="item__image" alt={item.name} />
+                  <p className="item__name">{item.name}</p>
+                </div>
+              </Link>
             )
           })}
         </div>
@@ -37,10 +43,12 @@ const Carousel: FC<Props> = (props) => {
           display: none;
         }
         .container__bar {
-          width: ${props.items.length*(140)}px;
+          width: ${props.items.length*(260)}px;
           display: flex;
           justify-content: space-around;
-          padding: 5% ${window.innerWidth*0.6}px;
+          padding: 5% ${window.innerWidth*0.85}px;
+          background-color: ${colors.main};
+          border-radius: 10px;
         }
         .container__card {
           background-color: grey;
@@ -48,7 +56,7 @@ const Carousel: FC<Props> = (props) => {
           margin: 0 50px
         }
         .item__image {
-          height: 100px;
+          width: 260px;
         }
         .item__name {
           font-weight: bold;
