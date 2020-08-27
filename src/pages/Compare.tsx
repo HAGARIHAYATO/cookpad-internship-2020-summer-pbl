@@ -57,7 +57,7 @@ const Compare: FC<Props> = (props) => {
             setSelectedRecipeID1(Number(e.target.value))
             console.log(selectedRecipeID1)
           }} className="main__selector">
-            {selectedRecipeID1 && selectedRecipeID2 ? <></> :<option value={0}>レシピ1を選択</option>}
+            {selectedRecipeID1 && selectedRecipeID2 && isCompare ? <></> :<option value={0}>レシピ1を選択</option>}
             {props.recipes.map((recipe) => {
               return recipe.id !== selectedRecipeID2 ? <option key={recipe.id} value={recipe.id}>{recipe.name}</option> : <></>
             })}
@@ -66,7 +66,7 @@ const Compare: FC<Props> = (props) => {
             setSelectedRecipeID2(Number(e.target.value))
             console.log(selectedRecipeID2)
           }} className="main__selector">
-            {selectedRecipeID1 && selectedRecipeID2 ? <></> :<option value={0}>レシピ2を選択</option>}
+            {selectedRecipeID1 && selectedRecipeID2 && isCompare ? <></> :<option value={0}>レシピ2を選択</option>}
             {props.recipes.map((recipe) => {
               return recipe.id !== selectedRecipeID1 ? <option key={recipe.id} value={recipe.id}>{recipe.name}</option> : <></>
             })}
