@@ -5,11 +5,11 @@
       "name": "アイオリ",
       "usecase": "サラダにもサンドウィッチにも",
       "taste_type": {
-        "sweet": 5,
-        "sour": 9,
-        "salty": 10,
-        "bitter": 2,
-        "oily": 3
+        "sweet": 1,
+        "sour": 4,
+        "salty": 3,
+        "bitter": 0,
+        "oily": 6
       },
       "materials": [
         {
@@ -31,9 +31,9 @@
       "name": "幽庵ダレ",
       "usecase": "魚や肉を1時間程漬けて焼くだけ！和食で一番シンプルで汎用てきなタレお肉のときは醤油を半量で！",
       "taste_type": {
-        "sweet": 0,
-        "sour": 0,
-        "salty": 0,
+        "sweet": 3,
+        "sour": 1,
+        "salty": 4,
         "bitter": 0,
         "oily": 0
       },
@@ -57,11 +57,11 @@
       "name": "オランデーズソース",
       "usecase": "",
       "taste_type": {
-        "sweet": 0,
-        "sour": 0,
-        "salty": 0,
+        "sweet": 3,
+        "sour": 4,
+        "salty": 2,
         "bitter": 0,
-        "oily": 0
+        "oily": 7
       },
       "materials": [
 
@@ -72,11 +72,11 @@
       "name": "フレンチドレッシング",
       "usecase": "",
       "taste_type": {
-        "sweet": 0,
-        "sour": 0,
-        "salty": 0,
+        "sweet": 2,
+        "sour": 6,
+        "salty": 3,
         "bitter": 0,
-        "oily": 0
+        "oily": 4
       },
       "materials": [
         
@@ -87,11 +87,11 @@
       "name": "◯◯焼き肉のたれ",
       "usecase": "",
       "taste_type": {
-        "sweet": 0,
+        "sweet": 3,
         "sour": 0,
-        "salty": 0,
+        "salty": 4,
         "bitter": 0,
-        "oily": 0
+        "oily": 4
       },
       "materials": [
         
@@ -102,11 +102,11 @@
       "name": "ソースヴィネグレット",
       "usecase": "",
       "taste_type": {
-        "sweet": 0,
-        "sour": 0,
-        "salty": 0,
+        "sweet": 2,
+        "sour": 4,
+        "salty": 2,
         "bitter": 0,
-        "oily": 0
+        "oily": 6
       },
       "materials": [
         
@@ -117,11 +117,11 @@
       "name": "ブール・ブラン",
       "usecase": "",
       "taste_type": {
-        "sweet": 0,
-        "sour": 0,
-        "salty": 0,
+        "sweet": 2,
+        "sour": 2,
+        "salty": 3,
         "bitter": 0,
-        "oily": 0
+        "oily": 8
       },
       "materials": [
         
@@ -132,11 +132,11 @@
       "name": "ソースマデール",
       "usecase": "",
       "taste_type": {
-        "sweet": 0,
-        "sour": 0,
-        "salty": 0,
-        "bitter": 0,
-        "oily": 0
+        "sweet": 4,
+        "sour": 2,
+        "salty": 1,
+        "bitter": 2,
+        "oily": 4
       },
       "materials": [
         
@@ -147,11 +147,11 @@
       "name": "ソースアメリケーヌ",
       "usecase": "",
       "taste_type": {
-        "sweet": 0,
+        "sweet": 3,
         "sour": 0,
-        "salty": 0,
+        "salty": 3,
         "bitter": 0,
-        "oily": 0
+        "oily": 5
       },
       "materials": [
         
@@ -162,11 +162,11 @@
       "name": "ごま油香るネギダレ",
       "usecase": "",
       "taste_type": {
-        "sweet": 0,
-        "sour": 0,
-        "salty": 0,
+        "sweet": 2,
+        "sour": 5,
+        "salty": 2,
         "bitter": 0,
-        "oily": 0
+        "oily": 5
       },
       "materials": [
         

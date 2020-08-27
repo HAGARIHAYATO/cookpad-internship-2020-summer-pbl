@@ -88,7 +88,7 @@ const Header: FC<Props> = (props) => {
         .nav {
           height: 70px;
           width: 100%;
-          color: ${colors.blue};
+          color: ${colors.brown} !important;
           background-color: ${colors.main};
           display: flex;
           justify-content: space-between;
