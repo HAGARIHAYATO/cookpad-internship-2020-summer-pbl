@@ -1,6 +1,14 @@
 export interface Recipe {
-  name: string,
-  id: number
+  name?: string,
+  id?: number,
+  usecase?: string,
+  taste_type?: {
+    sweet: number,
+    sour: number,
+    salty: number,
+    bitter: number,
+    umami: number
+  }
 }
 
 export interface User {
@@ -13,5 +21,6 @@ export interface User {
 
 export interface Props {
   user: User,
-  recipes: Array<Recipe>
+  recipes: Array<Recipe>,
+  isLogin: boolean
 }

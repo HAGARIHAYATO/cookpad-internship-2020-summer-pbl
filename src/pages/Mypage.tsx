@@ -1,11 +1,15 @@
-import React, {FC} from 'react'
+import React, {FC, useEffect} from 'react'
 import history from '../history';
 import CheckCard from '../component/CheckCard'
 import Carousel from '../component/Carousel'
 import { Props, Recipe } from '../static/index'
-import { userInfo } from 'os';
 
 const Mypage: FC<Props> = (props) => {
+  useEffect(() => {
+    if (!props.isLogin) {
+      history.push('/login')
+    }
+  })
   const getRecipe = (ids: Array<number>): Array<Recipe> => {
     const recipes: Array<Recipe> = props.recipes.filter((recipe) => {
       return ids.some((id) => {
