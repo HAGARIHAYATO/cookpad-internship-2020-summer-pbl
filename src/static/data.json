@@ -2,8 +2,8 @@
   "recipes": [
     {
       "id": 1,
-      "name": "アイオリ",
-      "usecase": "サラダにもサンドウィッチにも",
+      "name": "アイヨリ",
+      "usecase": "サラダでもサンドウィッチでも何にでもあう万能ソース",
       "taste_type": {
         "sweet": 1,
         "sour": 4,
@@ -55,22 +55,37 @@
     {
       "id": 3,
       "name": "オランデーズソース",
-      "usecase": "",
+      "usecase": "レモンの酸味とバターの風味。魚のムニエルなどに",
       "taste_type": {
         "sweet": 3,
-        "sour": 4,
+        "sour": 5,
         "salty": 2,
         "bitter": 0,
         "oily": 7
       },
       "materials": [
-
+        {
+          "name": "卵黄",
+          "quantity": "4個"
+        },
+        {
+          "name": "水",
+          "quantity": "100ml"
+        },
+        {
+          "name": "澄ましバター",
+          "quantity": "300ml"
+        },
+        {
+          "name": "レモン汁",
+          "quantity": "適量"
+        }
       ]
     },
     {
       "id": 4,
       "name": "フレンチドレッシング",
-      "usecase": "",
+      "usecase": "サラダにどうぞ",
       "taste_type": {
         "sweet": 2,
         "sour": 6,
@@ -79,13 +94,28 @@
         "oily": 4
       },
       "materials": [
-        
+        {
+          "name": "白ワインビネガー(酢なら代替可能)",
+          "quantity": "大さじ3"
+        },
+        {
+          "name": "サラダ油",
+          "quantity": "90ml"
+        },
+        {
+          "name": "砂糖",
+          "quantity": "小さじ2"
+        },
+        {
+          "name": "からし",
+          "quantity": "小さじ1"
+        }
       ]
     },
     {
       "id": 5,
-      "name": "◯◯焼き肉のたれ",
-      "usecase": "",
+      "name": "◯◯◯焼き肉のたれ",
+      "usecase": "◯◯◯焼き肉のたれ、お肉だけではなく調味料としても使える。",
       "taste_type": {
         "sweet": 3,
         "sour": 0,
@@ -94,13 +124,36 @@
         "oily": 4
       },
       "materials": [
-        
+        {
+          "name": "醤油",
+          "quantity": "大さじ2"
+        },
+        {
+          "name": "酒",
+          "quantity": "大さじ1"
+        },
+        {
+          "name": "みりん",
+          "quantity": "大さじ1"
+        },
+        {
+          "name": "砂糖",
+          "quantity": "大さじ1"
+        },
+        {
+          "name": "にんにく",
+          "quantity": "2片"
+        },
+        {
+          "name": "ごま油",
+          "quantity": "大さじ1"
+        }
       ]
     },
     {
       "id": 6,
-      "name": "ソースヴィネグレット",
-      "usecase": "",
+      "name": "びっくりド◯キーのマヨネーズ",
+      "usecase": "サラダにどうぞ",
       "taste_type": {
         "sweet": 2,
         "sour": 4,
@@ -109,13 +162,28 @@
         "oily": 6
       },
       "materials": [
-        
+        {
+          "name": "卵黄",
+          "quantity": "1個"
+        },
+        {
+          "name": "サラダ油",
+          "quantity": "適量"
+        },
+        {
+          "name": "白ワインビネガー",
+          "quantity": "大さじ1"
+        },
+        {
+          "name": "にんにく",
+          "quantity": "1片"
+        }
       ]
     },
     {
       "id": 7,
       "name": "ブール・ブラン",
-      "usecase": "",
+      "usecase": "白身魚やサーモンに添えると美味しい！",
       "taste_type": {
         "sweet": 2,
         "sour": 2,
@@ -124,13 +192,36 @@
         "oily": 8
       },
       "materials": [
-        
+        {
+          "name": "バター",
+          "quantity": "100g"
+        },
+        {
+          "name": "エシャロット",
+          "quantity": "1/2個"
+        },
+        {
+          "name": "白ワインビネガー",
+          "quantity": "10ml"
+        },
+        {
+          "name": "白ワイン",
+          "quantity": "80ml"
+        },
+        {
+          "name": "生クリーム",
+          "quantity": "20ml"
+        },
+        {
+          "name": "レモン汁",
+          "quantity": "10ml"
+        }
       ]
     },
     {
       "id": 8,
       "name": "ソースマデール",
-      "usecase": "",
+      "usecase": "お肉のソースにピッタリ！",
       "taste_type": {
         "sweet": 4,
         "sour": 2,
@@ -139,13 +230,28 @@
         "oily": 4
       },
       "materials": [
-        
+        {
+          "name": "マデーラ酒",
+          "quantity": "150ml"
+        },
+        {
+          "name": "赤ワイン",
+          "quantity": "50ml"
+        },
+        {
+          "name": "フォンドヴォー(無くても可)",
+          "quantity": "50ml"
+        },
+        {
+          "name": "バター",
+          "quantity": "20g"
+        }
       ]
     },
     {
       "id": 9,
-      "name": "ソースアメリケーヌ",
-      "usecase": "",
+      "name": "チャーシューの仕上げダレ",
+      "usecase": "チャーシューだけでなく味玉づくりや、ご飯にぶっかけてもOK",
       "taste_type": {
         "sweet": 3,
         "sour": 0,
@@ -154,13 +260,36 @@
         "oily": 5
       },
       "materials": [
-        
+        {
+          "name": "醤油",
+          "quantity": "大さじ3"
+        },
+        {
+          "name": "酒",
+          "quantity": "大さじ3"
+        },
+        {
+          "name": "みりん",
+          "quantity": "大さじ1"
+        },
+        {
+          "name": "生姜スライス",
+          "quantity": "1/2個"
+        },
+        {
+          "name": "にんにくみじん切り",
+          "quantity": "4片"
+        },
+        {
+          "name": "砂糖",
+          "quantity": "大さじ2"
+        }
       ]
     },
     {
       "id": 10,
       "name": "ごま油香るネギダレ",
-      "usecase": "",
+      "usecase": "油淋鶏などのソースに！",
       "taste_type": {
         "sweet": 2,
         "sour": 5,
@@ -169,7 +298,38 @@
         "oily": 5
       },
       "materials": [
-        
+        {
+          "name": "ネギみじん切り",
+          "quantity": "1/2本分"
+        },
+        {
+          "name": "醤油",
+          "quantity": "大さじ3"
+        },
+        {
+          "name": "白出汁",
+          "quantity": "大さじ1"
+        },
+        {
+          "name": "ごま油",
+          "quantity": "大さじ2"
+        },
+        {
+          "name": "酢",
+          "quantity": "大さじ1"
+        },
+        {
+          "name": "みりん",
+          "quantity": "大さじ2"
+        },
+        {
+          "name": "酒",
+          "quantity": "大さじ1"
+        },
+        {
+          "name": "砂糖",
+          "quantity": "大さじ1"
+        }
       ]
     }
   ],

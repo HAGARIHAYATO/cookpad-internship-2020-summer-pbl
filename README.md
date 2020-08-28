@@ -1,6 +1,5 @@
-- 必要データはなるべく擬似的なデータで持っておく(レシピなど) /public/data.json
-- 言語切替のために文言はjsonで保持 /public/~
-- styled-jsxを使用する。colorは/public/colors.jsonで保持
+- 必要データはなるべく擬似的なデータで持っておく(レシピなど) /static/data.json
+- styled-jsxを使用する。colorは/static/colors.jsonで保持
 
 ### deploy
 - now at vercel

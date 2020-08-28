@@ -11,13 +11,16 @@ interface Props {
 
 const Recipes: FC<Props> = (props) => {
   const [searchType, setSearchType] = useState(0)
+  const [currentRecipes, setReipces] = useState(props.recipes)
   const prefix = "/recipes/"
   const checkSearchType = (num: number) => {
     switch (num) {
       case 0:
       return "text";
       case 1:
-      return "number"
+      return "number";
+      case 2:
+      return "text";
       default:
       return "text"
     }
@@ -31,13 +34,25 @@ const Recipes: FC<Props> = (props) => {
         }} className="select__type">
           <option value={0}>タイトル検索</option>
           <option value={1}>材料数検索</option>
-          <option value={2}></option>
+          <option value={2}>使用用途検索</option>
         </select>
-        {<input className="search" type={checkSearchType(searchType)} />}
-        <p className="search__length">{props.recipes.length}/{props.recipes.length}件表示</p>
+        <input className="search" type={checkSearchType(searchType)} onChange={(e) => {
+          const array = props.recipes.filter((recipe) => {
+            switch (searchType) {
+              case 1:
+              return (Number(e.target.value) === 0 ? true : recipe.materials!.length <= Number(e.target.value));
+              case 2:
+              return (recipe.usecase!.indexOf(e.target.value) > -1);;
+              default:
+              return (recipe.name!.indexOf(e.target.value) > -1);
+            }
+          })
+          setReipces(array)
+        }} />
+        <p className="search__length">{currentRecipes.length}/{props.recipes.length}件表示</p>
       </div>
       <p className="recipes">
-        {props.recipes.map((recipe) => {
+        {currentRecipes.map((recipe) => {
           return <Link to={prefix + recipe.id} ><div className="recipe__card"><RecipeCard recipe={recipe}/></div></Link>
         })}
       </p>
