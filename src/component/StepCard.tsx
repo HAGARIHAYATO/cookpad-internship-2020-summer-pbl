@@ -10,7 +10,7 @@ const StepCard: FC<Props> = (props) => {
   return(
     <>
       <div className="step__wrapper">
-        <p className="number__box">{props.index}</p>
+        <p className="number__box">{props.index+1}</p>
         <p className="step__text">{props.step}</p>
       </div>
       <style jsx>{`

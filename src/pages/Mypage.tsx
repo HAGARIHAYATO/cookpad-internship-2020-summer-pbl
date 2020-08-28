@@ -1,9 +1,9 @@
 import React, {FC, useEffect} from 'react'
 import history from '../history';
-import CheckCard from '../component/CheckCard'
 import Carousel from '../component/Carousel'
 import { Props, Recipe } from '../static/index'
 import { colors } from '../static/styles.json'
+import img from '../static/no_image.jpg'
 
 const Mypage: FC<Props> = (props) => {
   useEffect(() => {
@@ -22,17 +22,11 @@ const Mypage: FC<Props> = (props) => {
   return(
     <>
       <div className="body">
-        <h2 className="container__title">お気に入りレシピ</h2>
-        <div className="fav_container">
-          {getRecipe(props.user.favorite_recipe_ids!).map((item, index) => {
-            return (
-              <div key={index}> {<CheckCard recipe={item} isCheck={true} />} </div>
-            )
-          })}
+        <div className="image__wrapper">
+          <div className="background">
+            <img className="imgSize" src={img}/>
+          </div>
         </div>
-        <button className="btn" onClick={() => {
-          history.push('/mypage')
-        }}>更新</button>
         <Carousel items={getRecipe(props.user.post_recipe_ids!)} />
         <h2 className="container__title">ユーザー情報</h2>
         <div className="user_container">
@@ -54,7 +48,25 @@ const Mypage: FC<Props> = (props) => {
         }
         .container__title {
           width: 60%;
-          margin: 0 auto !important;
+          margin: 20px auto 0 auto !important;
+        }
+        .image__wrapper {
+          width: 60%;
+          margin: 0 auto;
+          position: relative;
+          min-height: 300px;
+        }
+        .imgSize {
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+        }
+        .background {
+          display: inline-block;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
         }
         .fav_container {
           width: 60%;
@@ -72,7 +84,7 @@ const Mypage: FC<Props> = (props) => {
           border-radius: 10px;
           width: 60%;
           padding: 5%;
-          margin: 50px auto;
+          margin: 0 auto 50px auto;
         }
         .btn {
           margin: 20px auto;
