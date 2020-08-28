@@ -16,7 +16,8 @@ interface Props {
 
 const steps = [
   "材料を揃える",
-  "材料を混ぜ合わせる"
+  "材料を混ぜ合わせる",
+  "塩・コショウで味を整える。"
 ]
 
 const RecipeShow: FC<Props> = (props) => {
