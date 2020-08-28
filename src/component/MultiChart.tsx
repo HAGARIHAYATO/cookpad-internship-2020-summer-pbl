@@ -33,7 +33,7 @@ const MultiChart: FC<Props> = (props) => {
       <PolarAngleAxis dataKey="name" />
       <PolarRadiusAxis />
       <Radar dataKey="A" stroke={colors.blue} fill={colors.blue} fillOpacity={0.6} />
-      <Radar dataKey="B" stroke={colors.blue} fill={colors.pink} fillOpacity={0.6} />
+      <Radar dataKey="B" stroke={colors.pink} fill={colors.pink} fillOpacity={0.6} />
     </RadarChart>
   );
 }

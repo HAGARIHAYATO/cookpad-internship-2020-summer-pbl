@@ -24,7 +24,7 @@ const TasteChart: FC<Props> = (props) => {
   }
 
   return (
-    <RadarChart cx={props.width/2.4} cy={props.height/1.3} outerRadius={100} width={props.width} height={props.height*1.5} data={array}>
+    <RadarChart cx={props.width/2.25} cy={props.height/1.3} outerRadius={100} width={props.width} height={props.height*1.5} data={array}>
       <PolarGrid />
       <PolarAngleAxis dataKey="name" />
       <PolarRadiusAxis />
